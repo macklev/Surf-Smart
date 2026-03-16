@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# System Files
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.log
+.cache/
+
+.vscode/
+
+*.pyc
+
