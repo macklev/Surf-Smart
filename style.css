@@ -44,6 +44,10 @@ nav a:hover {
 
 body {
   background-image: url("./Images/bgimage.jpg");
+  background-attachment: scroll; 
+  background-size: cover;
+  
+
 }
 
 button {
@@ -70,7 +74,7 @@ button {
   margin: auto; /* Center the card horizontally if desired */
   text-align: center;
   border-radius: 5px; /* Rounded corners */
-  background-color: white;
+  background-color: rgb(240, 240, 240);
 }
 
 .card:hover {
@@ -86,9 +90,9 @@ button {
   padding: 2px 16px;
 }
 
-h2 {
+.cardh2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(69, 131, 128)
+    color:rgb(230,116,142)
 }
 
 .cardtext {
@@ -101,4 +105,60 @@ h2 {
     margin-top: 20px;
     margin-left: auto;
     margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.card {
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(230,116,142);
+    
+}
+
+.textsec {
+    background-color: rgba(245, 245, 245, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 100px;
+    padding: 30px;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.page {
+  max-width: 1200px;
+  margin: 0 auto;  
+  padding: 60px 20px;
+
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+
+.parentcontainer{
+    
+    margin-top: 350px;
+}
+
+.parenttext {
+    color:rgb(255, 246, 234)
 }
