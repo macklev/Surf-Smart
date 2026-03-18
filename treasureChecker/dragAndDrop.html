@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Checker</title>
+</head>
+<body>
+    <h1>Check if the treasure is safe!</h1>
+    <p>Drag each action into the correct category</p>
+
+    <div id="items">
+        <div class="item" draggable="true" id="item1">Sharing your password</div>
+        <div class="item" draggable="true" id="item2">Adding friends on social media</div>
+        <div class="item" draggable="true" id="item3">Talking to strangers online</div>
+        <div class="item" draggable="true" id="item4">Using strong, unique passwords</div>
+        <div class="item" draggable="true" id="item5">Setting accounts to private</div>
+        <div class="item" draggable="true" id="item6">Clicking a link from a friend</div>
+        <div class="item" draggable="true" id="item7">Telling someone what school you go to</div>
+        <div class="item" draggable="true" id="item8">Signing up for a game</div>
+        <div class="item" draggable="true" id="item9">Telling a parent what you're doing</div>
+    </div>
+
+    <div id="safe" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Safe</h2>
+    </div>
+
+    <div id="careful" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Be Careful</h2>
+    </div>
+
+    <div id="dangerous" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Dangerous</h2>
+    </div>
+
+    <p id="feedback"> </p>
+
+    <script src="dropperScript.js"></script>
+</body>
+</html>
