@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Should You Tell?</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="game-page">
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../parents.html">Resources for Parents</a></li>
+                <li><a href="../games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page game-shell">
+    <h2>Who Should You Tell?</h2>
+    <p>For each picture, choose who to tell.</p>
+
+    <img id="scenario" src="" alt="Scenario Image">
+
+    <div id="options">
+        <img src="../Images/parents.jpg" onclick="check('parent')">
+        <img src="../Images/teacher.jpg" onclick="check('teacher')">
+        <img src="../Images/stranger.jpg" onclick="check('stranger')">
+    </div>
+    <p id="feedback"></p>
+
+    </main>
+    
+<script src="tellingGame.js"></script>
+</body>
+</html>

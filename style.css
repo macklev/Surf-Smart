@@ -50,7 +50,7 @@ body {
 
 }
 
-button {
+button, .game-button {
     background-color: rgb(69, 131, 128);
     color: white;
     padding: 15px 32px;       /* Space between text and border */
@@ -65,6 +65,12 @@ button {
     border-radius: 8px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+
+button:hover, .game-button:hover {
+    background-color: rgb(38, 85, 83);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    transition: transform 0.2s ease;
 }
 
 .card {
@@ -161,4 +167,182 @@ h2 {
 
 .parenttext {
     color:rgb(255, 246, 234)
+}
+
+/* Game pages */
+.game-hub p {
+  margin-bottom: 20px;
+}
+
+.game-card-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.game-card {
+  min-height: 250px;
+}
+
+.game-link {
+  display: inline-block;
+  margin-top: 16px;
+  background-color: rgb(69, 131, 128);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.game-link:hover {
+  background-color: rgb(38, 85, 83);
+}
+
+.game-page .game-shell {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+.game-page h1,
+.game-page p {
+  margin-left: 0;
+}
+
+#items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.item {
+  background: rgb(254, 252, 235);
+  border: 2px solid rgb(230, 116, 142);
+  border-radius: 10px;
+  padding: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  cursor: grab;
+}
+
+.dropzone {
+  margin-top: 16px;
+  min-height: 110px;
+  border: 2px dashed rgb(69, 131, 128);
+  border-radius: 12px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+#scenario {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+  border-radius: 12px;
+  margin-top: 14px;
+}
+
+#options {
+  display: flexbox;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#options img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+#options img:hover {
+  border-color: rgb(230, 116, 142);
+}
+
+#feedback {
+  margin-left: 0;
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+/* Quiz page visibility and layout */
+.quiz-page .start_btn {
+  display: block;
+  margin-top: 40px;
+}
+
+.quiz-page .start_btn.hide {
+  display: none;
+}
+
+.quiz-page .info_box,
+.quiz-page .quiz_box,
+.quiz-page .result_box {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 24px;
+}
+
+.quiz-page .info_box.activeInfo,
+.quiz-page .quiz_box.activeQuiz,
+.quiz-page .result_box.activeResult {
+  display: block;
+}
+
+.quiz-page .buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.quiz-page button,
+.quiz-page .start_btn button {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.quiz-page .next_btn {
+  display: none;
+}
+
+.quiz-page .next_btn.show {
+  display: inline-block;
+}
+
+.quiz-page .option_list ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.quiz-page .option_list li {
+  background: rgb(254, 252, 235);
+  border: 2px solid rgb(230, 116, 142);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+}
+
+.quiz-page .option_list li.correct {
+  border-color: rgb(69, 131, 128);
+}
+
+.quiz-page .option_list li.incorrect {
+  border-color: #bf3e3e;
+}
+
+.quiz-page .quiz_box footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 18px;
 }

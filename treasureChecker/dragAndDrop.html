@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treasure Checker</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-    <h1>Check if the treasure is safe!</h1>
-    <p>Drag each action into the correct category</p>
+<body class="game-page">
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../parents.html">Resources for Parents</a></li>
+                <li><a href="../games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page game-shell">
+        <h1>Check if the treasure is safe!</h1>
+        <p>Drag each action into the correct category</p>
 
     <div id="items">
         <div class="item" draggable="true" id="item1">Sharing your password</div>
@@ -34,6 +46,8 @@
     </div>
 
     <p id="feedback"> </p>
+
+    </main>
 
     <script src="dropperScript.js"></script>
 </body>

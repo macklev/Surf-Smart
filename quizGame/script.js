@@ -1,4 +1,5 @@
 const startBtn = document.querySelector(".start_btn button");
+const startBtnContainer = document.querySelector(".start_btn");
 const infoBox = document.querySelector(".info_box");
 const exitBtn = infoBox.querySelector(".buttons .quit");
 const continueBtn = infoBox.querySelector(".buttons .restart");
@@ -22,15 +23,18 @@ const bottomQuesCounter = document.querySelector("footer .total_que");
 // Show info box when start button is clicked
 startBtn.onclick = () => {
   infoBox.classList.add("activeInfo");
+  startBtnContainer.classList.add("hide");
 }
 // Hide info box when exit button is clicked
 exitBtn.onclick = () => {
   infoBox.classList.remove("activeInfo");
+  startBtnContainer.classList.remove("hide");
 }
 // Start quiz when continue button is clicked
 continueBtn.onclick = () => {
   infoBox.classList.remove("activeInfo");
   quizBox.classList.add("activeQuiz");
+  startBtnContainer.classList.add("hide");
   initializeQuiz();
 }
 // Restart quiz when restart button is clicked
@@ -62,6 +66,7 @@ function initializeQuiz() {
   queCounter(queNumb);
   startTimer(timeValue);
   startTimerLine(widthValue);
+  nextBtn.classList.remove("show");
 }
 // Reset quiz variables
 function resetQuiz() {
@@ -137,6 +142,7 @@ function showResult() {
   infoBox.classList.remove("activeInfo");
   quizBox.classList.remove("activeQuiz");
   resultBox.classList.add("activeResult");
+  nextBtn.classList.remove("show");
   const scoreText = resultBox.querySelector(".score_text");
   let scoreTag = '';
   if (userScore > 3) {
