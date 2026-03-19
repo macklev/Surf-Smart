@@ -7,10 +7,10 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     margin-left: 100px;
-    margin-top: 60px;
-
+    margin-top: 150px;
     color: rgb(230,116,142);
     font-size: 64px;
+    
 
 }
 
@@ -190,11 +190,13 @@ h2 {
 /* Game pages */
 .game-hub p {
   margin-bottom: 20px;
+  
 }
 
 .game-card-container {
   margin-left: 0;
   margin-right: 0;
+
 }
 
 .game-card {
