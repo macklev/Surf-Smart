@@ -187,7 +187,7 @@ function startTimerLine(time) {
 }
 // Update the question counter
 function queCounter(index) {
-  let totalQueCounTag = `<span><p>${index}</p> of <p>${questions.length}</p> Questions</span>`;
+  let totalQueCounTag = `<span><p>${index} of ${questions.length} Questions</p></span>`;
   bottomQuesCounter.innerHTML = totalQueCounTag;
 }
 // Tick and cross icons

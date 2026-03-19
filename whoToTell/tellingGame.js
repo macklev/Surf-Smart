@@ -21,7 +21,7 @@ let scenarios = [
     },
     {
         image: '../Images/askingScreentime.webp',
-        text: 'More screen time? Who do you ask?',
+        text: 'Who should you ask for more screen time?',
         correct: 'parent'
     }
 ]
@@ -56,12 +56,14 @@ let currentScenario = 0;
 function showScenario() {
     if (currentScenario < scenarios.length) {
         const scenario = scenarios[currentScenario];
+        document.getElementById('scenario-text').textContent = scenario.text;
         document.getElementById('scenario').src = scenario.image;
         document.getElementById('scenario').alt = scenario.text;
         currentScenario++;
     } else {
         document.getElementById('scenario').src = '';
         document.getElementById('scenario').alt = 'No more scenarios';
+        document.getElementById('scenario-text').textContent = '';
         document.getElementById('options').style.display = 'none';
         document.getElementById('feedback').textContent = 'Thanks for playing!';
     }
