@@ -15,7 +15,7 @@ h1 {
 }
 
 p {
-    font-family: Georgia, 'Times New Roman', Times, serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 100px;
     margin-top: 30px;
     font-size: 20px;
@@ -136,7 +136,7 @@ button:hover, .game-button:hover {
   gap: 20px;
   flex-wrap: wrap; 
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -181,10 +181,11 @@ h2 {
 .parentcontainer{
     
     margin-top: 350px;
+    margin-right: 75px;
 }
 
 .parenttext {
-    color:rgb(255, 246, 234)
+    color:rgb(162, 240, 240)
 }
 
 /* Game pages */
@@ -388,4 +389,18 @@ h2 {
   align-items: center;
   gap: 12px;
   margin-top: 18px;
+}
+
+.biggerp {
+  font-size: 40px;
+  margin-right: 800px;
+}
+
+.textp {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.bottomtext {
+  color:rgb(255, 246, 234)
 }
